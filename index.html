@@ -12,25 +12,31 @@
     .txt-primary {
       color: slategray;
       /* color: cadetblue; */
+      /* max-width: 163px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto; */
     }
     .txt-secondary {
       color: darkolivegreen;
       font-weight: lighter;
     }
   </style>
-  
+
   <body>
     <div class="container my-5">
-      <section class="row">
-        <article class="col-12 col-md-6 col-lg-3">
-          <div class="card text-center shadow">
-            <img src="" class="card-img-top" alt="Character image" />
-            <div class="card-body">
-              <h5 class="card-title txt-primary">Character name</h5>
-              <p class="card-text txt-secondary">Character information</p>
+      <section class="row" id="cards">
+        <template id="cardTemplate">
+          <article class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center shadow">
+              <img src="" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h5 class="card-title txt-primary"></h5>
+                <p class="card-text txt-secondary"></p>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </template>
       </section>
     </div>
     <script src="app.js"></script>
